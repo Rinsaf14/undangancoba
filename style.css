@@ -1,0 +1,1138 @@
+@font-face {
+  font-family: "Savoye LET";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Savoye Let"),
+    url("assets/font/Savoye_LET/savoyeletplain.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hv-simplicite";
+  font-style: normal;
+  font-weight: normal;
+  src: local("hv-simplicite"),
+    url("assets/font/hv-simplicite/hv-simplicite-alternative-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "BASKE_1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE_1"),
+    url("assets/font/baskerville/BASKE1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE_9";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE_9"),
+    url("assets/font/baskerville/BASKE9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE_10";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE_10"),
+    url("assets/font/baskerville/BASKE10.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVI";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVI"),
+    url("assets/font/baskerville/baskervi.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVILLE BOLD BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVILLE BOLD BT"),
+    url("assets/font/baskerville/baskerville-bold-bt_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVILLE BOLD FONT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVILLE BOLD FONT"),
+    url("assets/font/baskerville/Baskerville-Bold-font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVILLE BOLD ITALIC BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVILLE BOLD ITALIC BT"),
+    url("assets/font/baskerville/baskervillebolditalicbt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RV_1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RV 1"),
+    url("assets/font/baskerville/baskrv-l.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE VL_1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE VL 1"),
+    url("assets/font/baskerville/baskvl.woff") format("woff");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "BASKE VL_1", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+}
+
+/* Openner */
+
+#openner {
+  height: 100vh;
+  position: fixed;
+  background: url(assets/img/Section1_BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.top-heading-openner {
+  font-family: BASKE VL_1;
+  font-size: 1.8rem;
+  color: #9a7976;
+  position: relative;
+  margin-bottom: 1.8rem;
+  margin-top: 100px;
+}
+
+.openner-nama {
+  width: 40%;
+}
+
+.text-group-top {
+  margin-bottom: 6rem;
+  margin-top: -8rem;
+}
+.text-group-bottom {
+  color: #ae938d;
+}
+
+.text-group-bottom p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.btn-open {
+  background: linear-gradient(to right, #deccc8, #d2b3ae);
+  border: none !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  color: #9a7976;
+  font-family: BASKE 9;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  column-gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.btn-open img {
+  width: 1rem;
+  color: #9a7976;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.flower-one {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+@media (max-width: 990px) {
+  .openner-nama {
+    width: 50%;
+  }
+}
+
+@media (max-width: 890px) {
+  .top-heading-openner {
+    font-size: 1.5rem;
+  }
+
+  .openner-nama {
+    width: 50%;
+  }
+
+  .text-group-bottom p {
+    font-size: 1.2rem;
+  }
+
+  .btn-open {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .openner-nama {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .top-heading-openner {
+    font-size: 1.2rem;
+  }
+
+  .text-group-bottom p {
+    font-size: 1rem;
+  }
+
+  .btn-open {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 419px) {
+  .top-heading-openner {
+    font-size: 1.2rem;
+    margin-top: -50px;
+  }
+
+  .openner-nama {
+    width: 65%;
+  }
+
+  .text-group-top {
+    margin-bottom: 6rem;
+  }
+
+  .text-group-bottom p {
+    font-size: 1rem;
+  }
+
+  .btn-open {
+    font-size: 1rem;
+  }
+}
+/* Openner End */
+
+/* Pengantin */
+
+#pengantin {
+  background: url(assets/img/Section2_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+  position: relative; /* Ubah dari absolute menjadi relative untuk .undangan-info */
+}
+
+.undangan-info {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 30px); /* Sesuaikan lebar jika diperlukan */
+  max-width: 400px; /* Batasi lebar maksimum jika perlu */
+}
+
+.heading-title h4 {
+  font-family: BASKE 9;
+  font-size: 3rem;
+  color: #916e6c;
+  margin-bottom: 7rem;
+}
+
+.heading-title img {
+  width: 600px;
+}
+
+.heading-description {
+  padding: 60px;
+  color: #916e6c;
+  margin-top: 100px;
+}
+
+.ayat-quran {
+  margin-top: 50px;
+  padding: 0px 10px;
+}
+
+.ayat-quran p {
+  font-size: 1.5rem;
+  font-style: Georgia;
+}
+
+.ayat-quran h6 {
+  font-size: 3rem;
+  font-family: BASKE 9;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  padding: 0px;
+}
+
+.wrapper-foto {
+  z-index: 1;
+  display: inline-block;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.foto-pengantin {
+  width: 100%;
+}
+
+.bg-pengantin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+@media (max-width: 890px) {
+  #pengantin {
+    background: url(assets/img/Section2_BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+    position: relative; /* Ubah dari absolute menjadi relative untuk .undangan-info */
+  }
+
+  .undangan-info {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px); /* Sesuaikan lebar jika diperlukan */
+    max-width: 400px; /* Batasi lebar maksimum jika perlu */
+  }
+
+  .heading-title h4 {
+    font-family: BASKE 9;
+    font-size: 2rem;
+    color: #916e6c;
+    margin-bottom: 5rem;
+  }
+
+  .heading-title img {
+    width: 420px;
+  }
+
+  .heading-description {
+    color: #916e6c;
+    margin-top: 100px;
+  }
+
+  .ayat-quran {
+    margin-top: 50px;
+  }
+
+  .ayat-quran p {
+    font-size: 1.5rem;
+    font-style: Georgia;
+  }
+
+  .ayat-quran h6 {
+    font-size: 3rem;
+    font-family: BASKE 9;
+    margin-bottom: 50px;
+    margin-top: 100px;
+  }
+
+  .wrapper-foto {
+    z-index: 1;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 100%;
+  }
+
+  .bg-pengantin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #pengantin {
+    background: url(assets/img/Section2_BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+    position: relative; /* Ubah dari absolute menjadi relative untuk .undangan-info */
+  }
+
+  .undangan-info {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px); /* Sesuaikan lebar jika diperlukan */
+    max-width: 400px; /* Batasi lebar maksimum jika perlu */
+  }
+
+  .heading-title {
+    padding: 50px;
+  }
+  .heading-title h4 {
+    font-family: BASKE 9;
+    font-size: 1.5rem;
+    color: #916e6c;
+    margin-bottom: 5rem;
+  }
+
+  .heading-title img {
+    width: 320px;
+  }
+
+  .heading-description {
+    padding: 40px;
+    color: #916e6c;
+  }
+
+  .ayat-quran p {
+    font-size: 1rem;
+    font-style: Georgia;
+  }
+
+  .ayat-quran h6 {
+    font-size: 2rem;
+    font-family: BASKE 9;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .wrapper-foto {
+    z-index: 1;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 100%;
+  }
+
+  .bg-pengantin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .heading-description {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading-title {
+    padding: 50px;
+  }
+  .heading-title h4 {
+    font-size: 1.5rem;
+  }
+
+  .heading-title img {
+    width: 260px;
+  }
+
+  .heading-description {
+    padding: 0px 60px;
+  }
+
+  .ayat-quran h6 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 419px) {
+  #pengantin {
+    background: url(assets/img/Section2_BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .undangan-info {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .heading-title {
+    padding: 50px;
+  }
+  .heading-title h4 {
+    font-family: BASKE 9;
+    font-size: 1rem;
+    color: #916e6c;
+    margin-bottom: 3rem;
+  }
+
+  .heading-title img {
+    width: 200px;
+  }
+
+  .heading-description {
+    padding: 65px;
+    color: #916e6c;
+  }
+
+  .ayat-quran {
+    margin-top: -50px;
+  }
+
+  .ayat-quran p {
+    font-size: 9px;
+    font-style: Georgia;
+  }
+
+  .ayat-quran h6 {
+    font-size: 0.8rem;
+    font-family: BASKE 9;
+    margin-bottom: 30px;
+  }
+
+  .wrapper-foto {
+    z-index: 1;
+    display: inline-block;
+    padding: 35px;
+    box-sizing: border-box;
+  }
+
+  .foto-pengantin {
+    width: 100%;
+  }
+
+  .bg-pengantin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+/* Pengantin End */
+
+/* Nama Pengantin */
+
+#nama-pengantin {
+  background: url(assets/img/Section3_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.pengantin-content {
+  margin-bottom: 80px;
+  margin-top: 250px;
+}
+
+.pengantin-text {
+  margin-top: -70px;
+}
+
+.nama-description img {
+  width: 80px;
+  margin-bottom: 10px;
+  margin-top: -10rem;
+}
+
+.nama-description h5 {
+  font-style: Savoye LET;
+  font-size: 10px;
+  margin-top: -3rem;
+  margin-bottom: 25px;
+}
+
+.nama-description h4 {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.nama-wanita {
+  margin-top: 50px;
+  color: #916e6c;
+  font-family: BASKE RVILLE BOLD BT;
+  font-size: 12px;
+}
+
+.nama-wanita img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.dengan p {
+  color: #916e6c;
+  margin-bottom: 30px;
+}
+
+.nama-lelaki {
+  margin-top: 10px;
+  color: #916e6c;
+  font-family: BASKE RVILLE BOLD BT;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.nama-lelaki img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.bg-nama-pengantin {
+  position: absolute;
+  margin-top: -2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+/* Nama Pengantin End */
+
+/* Pelaksanaan */
+
+#pelaksanaan {
+  background: url(assets/img/Section4_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.pelaksanaan-cover {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.pelaksanaan-title p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.pelaksanaan-title img {
+  width: 250px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.pelaksanaan-akad h5 {
+  font-family: BASKE 9;
+  color: #916e6c;
+  font-size: 25px;
+  margin-bottom: 0px;
+  font-weight: Bold;
+}
+
+.pelaksanaan-akad p {
+  font-size: 0.9rem;
+  color: #916e6c;
+  line-height: 1.2;
+}
+
+.pelaksanaan-resepsi {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pelaksanaan-resepsi h5 {
+  font-family: BASKE 9;
+  color: #916e6c;
+  font-size: 25px;
+  font-weight: Bold;
+  margin-bottom: 5px;
+}
+
+.pelaksanaan-resepsi p {
+  font-size: 0.9rem;
+  color: #916e6c;
+  line-height: 1.2;
+}
+
+.pelaksanaan-balai img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.pelaksanaan-alamat {
+  font-size: 0.9rem;
+  color: #916e6c;
+  line-height: 1.2;
+}
+.bg-pelaksanaan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+/* Pelaksanaan End */
+
+/* Peta Lokasi */
+
+/* Peta Lokasi */
+
+#lokasi {
+  background: url(assets/img/Section5_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.lokasi-pengantin {
+  margin-top: 0px;
+}
+
+.lokasi-pengantin iframe {
+  width: 290px;
+  height: 230px;
+  margin-top: 120px;
+}
+
+.btn-lokasi {
+  border-radius: 5px;
+  background-color: #9a7976;
+  border: none;
+  padding: 6px 40px;
+  color: white;
+  margin-top: 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.countdown {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.countdown h2 {
+  font-family: BASKE RVILLE BOLD BT;
+  color: #9a7976;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+}
+
+.waktu {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.waktu-wrapper {
+  margin-top: 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(#dac7c1, #d1b4ae, #dac7c1);
+  padding: 6px 5px;
+  color: #916e6c;
+}
+
+.angka-waktu {
+  font-size: 25px;
+  margin: 0px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: 2px;
+}
+
+.ket-waktu {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.bg-lokasi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+  margin-top: -30px;
+}
+
+/* Peta Lokasi End */
+
+/* Adab Walimah */
+
+#walimah {
+  background: url(assets/img/Section6_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title-walimah img {
+  width: 250px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.grid-item {
+  width: calc(50% - 20px); /* 50% minus margin */
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.bg-walimah {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+/* Adab Walimah End */
+
+/* Our Story */
+#story {
+  background: url(assets/img/Section7_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title-story img {
+  width: 170px;
+  margin-bottom: 5px;
+}
+
+.title-story p {
+  color: #916e6c;
+  line-height: 1;
+  font-size: 12px;
+}
+
+.pertemuan {
+  margin-bottom: 30px;
+}
+
+.pertemuan p {
+  font-size: 12px;
+  background-color: white;
+  margin: 0px 30px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bg-story {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+  margin-top: -100px;
+}
+
+/* Our Story End*/
+
+/* Mempelai */
+
+.full-image {
+  background-image: url("assets/img/mempelai.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Mengisi lebar div */
+  height: 250px; /* Mengisi tinggi div dengan tinggi viewport */
+}
+
+/* Mempelai End */
+
+/* RSVP */
+
+#rsvp {
+  background: url(assets/img/Section8_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.content-rsvp {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.title-rsvp img {
+  width: 100px;
+}
+
+.title-rsvp p {
+  font-size: 12px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.form-rsvp {
+  margin: 0px 20px;
+}
+form {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  font-size: 12px;
+}
+
+input[type="text"],
+textarea {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-rsvp {
+  background: linear-gradient(to right, #deccc8, #d2b3ae);
+  border: none;
+  font-family: hv-simplicite;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #916e6c;
+}
+
+.btn-rsvp {
+  margin-top: 20px;
+}
+
+.konfirmasi {
+  border: 2px solid gold;
+  font-size: 14px;
+}
+
+.deskripsi-konfirmasi {
+  margin: 10px;
+  background-color: #9a7976;
+}
+
+.content-konfirmasi {
+  margin: 10px 35px;
+}
+
+.guest-list {
+  display: flex;
+}
+
+.hr {
+  margin: 0px;
+}
+.nama {
+  margin-top: 10px;
+  display: flex;
+}
+
+.guest-name {
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  padding: 0px 10px;
+  margin-bottom: 5px;
+}
+
+.attendance {
+  font-style: italic;
+  margin-left: 10px;
+  color: white;
+}
+
+.pesan-box {
+  margin-top: 0px;
+  text-align: left;
+  color: white;
+}
+
+.pagination {
+  justify-content: space-between;
+  display: flex;
+}
+.pagination-item {
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+}
+
+/* RSVP End */
+
+/* Terima Kasih */
+
+#terima-kasih {
+  background: url(assets/img/Section9_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.ucapan-content {
+  margin-bottom: 30px;
+}
+
+.terima-kasih-title h1 {
+  color: #a48a73;
+  font-family: BASKE RVILLE BOLD BT;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+.terima-kasih-title h5 {
+  font-size: 20px;
+  dont-weight: bold;
+  margin-top: 5px;
+}
+
+.terima-kasih-title h6 {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.terima-kasih-title p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.ucapan p {
+  font-size: 12px;
+  margin-top: 70px;
+}
+
+.ucapan h6 {
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.ucapan-cp {
+  width: 90px;
+  margin-bottom: 0px;
+}
+
+.ucapan-invaite {
+  width: 60px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.bg-ucapan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+  margin-top: 8rem;
+}
+
+/* Terima Kasih End */
+
+/* Nasyid */
+.music-icon {
+  position: fixed;
+  color: white;
+  background-color: #9aa28d;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 1px 1px 5px #00000052;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.music-icon:hover {
+  filter: brightness(1.3);
+}
+
+.music-icon.disabled {
+  filter: grayscale();
+}
